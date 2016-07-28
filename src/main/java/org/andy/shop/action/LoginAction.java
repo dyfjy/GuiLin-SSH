@@ -27,7 +27,6 @@ public class LoginAction extends ActionSupport {
 	@Action(value = "login",results={
 			@Result(name="success",type="chain", location="/userinfo")})
 	public String login() throws Exception {
-		System.out.println("login");
 		if ("123".equals(userPass)) {
 			return SUCCESS;
 		} else {
