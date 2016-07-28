@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration status="OFF">
+
+	<properties>
+		<!-- 日志存放根目录（用于修改windows/linux的路径配置） -->
+		<!-- ****修改本路径，请同时修改config.properties 中loghome 值 -->
+		<property name="LOG_HOME">D:\\GuiLinLog</property>
+		<!-- 登录解析日志保存路径 -->
+		<Property name="loginParName">${LOG_HOME}/GuiLin/$${date:yyyyMMdd}.log
+		</Property>
+
+	</properties>
+	<appenders>
+		<!-- 输出控制台的配置 -->
+		<Console name="Console" target="SYSTEM_OUT">
+			<PatternLayout
+				pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+			<ThresholdFilter level="trace" onMatch="ACCEPT"
+				onMismatch="DENY" />
+		</Console>
+		<!-- 注册错误日志输出到文件的配置 -->
+		<File name="errorLog" fileName="${LOG_HOME}/fileError.log"
+			append="true">
+			<ThresholdFilter level="error" onMatch="ACCEPT"
+				onMismatch="DENY" />
+			<PatternLayout
+				pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %class{36} %L %M - %msg%xEx%n" />
+		</File>
+		<!-- 登录解析输出到文件的配置-按指定文件大小滚动 -->
+		<RollingFile name="RollingFilePar" fileName="${loginParName}"
+			filePattern="${LOG_HOME}/Userinfo/$${date:yyyyMMdd}-%i.log" >
+			<PatternLayout pattern="%msg%n" />
+			<SizeBasedTriggeringPolicy size="1KB" />
+		</RollingFile>
+	</appenders>
+	<loggers>
+		<!-- handle接口日志记录配置 -->
+		<logger name="org.andy.shop.action.UserinfoAction" level="trace"
+			additivity="false">
+			<appender-ref ref="Console" />
+			<appender-ref ref="errorLog" />
+			<appender-ref ref="RollingFilePar" />
+		</logger>
+
+		<!-- 通用配置 -->
+		<root level="trace">
+			<appender-ref ref="Console" />
+		</root>
+	</loggers>
+</configuration>  

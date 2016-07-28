@@ -1,0 +1,90 @@
+[GuiLin-SSH][INFO] [2016-07-28 15:16:29] org.springframework.web.context.ContextLoader.initWebApplicationContext(285) | Root WebApplicationContext: initialization started
+[GuiLin-SSH][INFO] [2016-07-28 15:16:29] org.springframework.context.support.AbstractApplicationContext.prepareRefresh(510) | Refreshing Root WebApplicationContext: startup date [Thu Jul 28 15:16:29 CST 2016]; root of context hierarchy
+[GuiLin-SSH][INFO] [2016-07-28 15:16:29] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317) | Loading XML bean definitions from class path resource [spring.xml]
+[GuiLin-SSH][INFO] [2016-07-28 15:16:29] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317) | Loading XML bean definitions from class path resource [spring-hibernate.xml]
+[GuiLin-SSH][INFO] [2016-07-28 15:16:30] org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(172) | Loading properties file from class path resource [config.properties]
+[GuiLin-SSH][INFO] [2016-07-28 15:16:30] com.alibaba.druid.pool.DruidDataSource.init(669) | {dataSource-1} inited
+[GuiLin-SSH][INFO] [2016-07-28 15:16:30] org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>(66) | HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+[GuiLin-SSH][INFO] [2016-07-28 15:16:30] org.hibernate.Version.logVersion(54) | HHH000412: Hibernate Core {4.3.8.Final}
+[GuiLin-SSH][INFO] [2016-07-28 15:16:30] org.hibernate.cfg.Environment.<clinit>(239) | HHH000206: hibernate.properties not found
+[GuiLin-SSH][INFO] [2016-07-28 15:16:30] org.hibernate.cfg.Environment.buildBytecodeProvider(346) | HHH000021: Bytecode provider name : javassist
+[GuiLin-SSH][INFO] [2016-07-28 15:16:30] org.hibernate.dialect.Dialect.<init>(145) | HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[GuiLin-SSH][INFO] [2016-07-28 15:16:31] org.hibernate.engine.transaction.internal.TransactionFactoryInitiator.initiateService(62) | HHH000399: Using default transaction strategy (direct JDBC transactions)
+[GuiLin-SSH][INFO] [2016-07-28 15:16:31] org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory.<init>(47) | HHH000397: Using ASTQueryTranslatorFactory
+[GuiLin-SSH][INFO] [2016-07-28 15:16:31] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(207) | HHH000228: Running hbm2ddl schema update
+[GuiLin-SSH][INFO] [2016-07-28 15:16:31] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(218) | HHH000102: Fetching database metadata
+[GuiLin-SSH][INFO] [2016-07-28 15:16:31] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(230) | HHH000396: Updating schema
+[GuiLin-SSH][INFO] [2016-07-28 15:16:31] org.hibernate.tool.hbm2ddl.TableMetadata.<init>(66) | HHH000261: Table found: shop.user_info
+[GuiLin-SSH][INFO] [2016-07-28 15:16:31] org.hibernate.tool.hbm2ddl.TableMetadata.<init>(67) | HHH000037: Columns: [id, name, age, telephone]
+[GuiLin-SSH][INFO] [2016-07-28 15:16:31] org.hibernate.tool.hbm2ddl.TableMetadata.<init>(69) | HHH000108: Foreign keys: []
+[GuiLin-SSH][INFO] [2016-07-28 15:16:31] org.hibernate.tool.hbm2ddl.TableMetadata.<init>(70) | HHH000126: Indexes: [primary]
+[GuiLin-SSH][INFO] [2016-07-28 15:16:31] org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(267) | HHH000232: Schema update complete
+[GuiLin-SSH][INFO] [2016-07-28 15:16:31] org.springframework.orm.hibernate4.HibernateTransactionManager.afterPropertiesSet(360) | Using DataSource [{
+	CreateTime:"2016-07-28 15:16:30",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:571810580, ConnectTime:"2016-07-28 15:16:30", UseCount:2, LastActiveTime:"2016-07-28 15:16:31"}
+	]
+}
+
+[
+	{
+	ID:571810580, 
+	poolStatements:[
+		]
+	}
+]] of Hibernate SessionFactory for HibernateTransactionManager
+[GuiLin-SSH][INFO] [2016-07-28 15:16:31] org.springframework.web.context.ContextLoader.initWebApplicationContext(325) | Root WebApplicationContext: initialization completed in 1762 ms
+[GuiLin-SSH][INFO] [2016-07-28 15:16:31] com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(46) | Parsing configuration file [struts-default.xml]
+[GuiLin-SSH][INFO] [2016-07-28 15:16:31] com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(46) | Parsing configuration file [struts-plugin.xml]
+[GuiLin-SSH][INFO] [2016-07-28 15:16:31] com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(46) | Parsing configuration file [struts.xml]
+[GuiLin-SSH][INFO] [2016-07-28 15:16:31] com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(46) | Choosing bean (spring) for (com.opensymphony.xwork2.ObjectFactory)
+[GuiLin-SSH][INFO] [2016-07-28 15:16:31] com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(46) | Choosing bean (struts) for (com.opensymphony.xwork2.factory.ActionFactory)
+[GuiLin-SSH][INFO] [2016-07-28 15:16:31] com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(46) | Choosing bean (struts) for (com.opensymphony.xwork2.factory.ResultFactory)
+[GuiLin-SSH][INFO] [2016-07-28 15:16:31] com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(46) | Choosing bean (struts) for (com.opensymphony.xwork2.factory.ConverterFactory)
+[GuiLin-SSH][INFO] [2016-07-28 15:16:31] com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(46) | Choosing bean (struts) for (com.opensymphony.xwork2.factory.InterceptorFactory)
+[GuiLin-SSH][INFO] [2016-07-28 15:16:31] com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(46) | Choosing bean (struts) for (com.opensymphony.xwork2.factory.ValidatorFactory)
+[GuiLin-SSH][INFO] [2016-07-28 15:16:31] com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(46) | Choosing bean (struts) for (com.opensymphony.xwork2.factory.UnknownHandlerFactory)
+[GuiLin-SSH][INFO] [2016-07-28 15:16:31] com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(46) | Choosing bean (struts) for (com.opensymphony.xwork2.FileManagerFactory)
+[GuiLin-SSH][INFO] [2016-07-28 15:16:31] com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(46) | Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.XWorkConverter)
+[GuiLin-SSH][INFO] [2016-07-28 15:16:31] com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(46) | Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.CollectionConverter)
+[GuiLin-SSH][INFO] [2016-07-28 15:16:31] com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(46) | Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.ArrayConverter)
+[GuiLin-SSH][INFO] [2016-07-28 15:16:31] com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(46) | Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.DateConverter)
+[GuiLin-SSH][INFO] [2016-07-28 15:16:31] com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(46) | Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.NumberConverter)
+[GuiLin-SSH][INFO] [2016-07-28 15:16:31] com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(46) | Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.StringConverter)
+[GuiLin-SSH][INFO] [2016-07-28 15:16:31] com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(46) | Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionPropertiesProcessor)
+[GuiLin-SSH][INFO] [2016-07-28 15:16:31] com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(46) | Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionFileProcessor)
+[GuiLin-SSH][INFO] [2016-07-28 15:16:31] com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(46) | Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionAnnotationProcessor)
+[GuiLin-SSH][INFO] [2016-07-28 15:16:31] com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(46) | Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterCreator)
+[GuiLin-SSH][INFO] [2016-07-28 15:16:31] com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(46) | Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterHolder)
+[GuiLin-SSH][INFO] [2016-07-28 15:16:31] com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(46) | Choosing bean (struts) for (com.opensymphony.xwork2.TextProvider)
+[GuiLin-SSH][INFO] [2016-07-28 15:16:31] com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(46) | Choosing bean (struts) for (com.opensymphony.xwork2.LocaleProvider)
+[GuiLin-SSH][INFO] [2016-07-28 15:16:31] com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(46) | Choosing bean (struts) for (com.opensymphony.xwork2.ActionProxyFactory)
+[GuiLin-SSH][INFO] [2016-07-28 15:16:31] com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(46) | Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ObjectTypeDeterminer)
+[GuiLin-SSH][INFO] [2016-07-28 15:16:31] com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(46) | Choosing bean (struts) for (org.apache.struts2.dispatcher.mapper.ActionMapper)
+[GuiLin-SSH][INFO] [2016-07-28 15:16:31] com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(46) | Choosing bean (jakarta) for (org.apache.struts2.dispatcher.multipart.MultiPartRequest)
+[GuiLin-SSH][INFO] [2016-07-28 15:16:31] com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(46) | Choosing bean (struts) for (org.apache.struts2.views.freemarker.FreemarkerManager)
+[GuiLin-SSH][INFO] [2016-07-28 15:16:31] com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(46) | Choosing bean (struts) for (org.apache.struts2.components.UrlRenderer)
+[GuiLin-SSH][INFO] [2016-07-28 15:16:31] com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(46) | Choosing bean (struts) for (com.opensymphony.xwork2.validator.ActionValidatorManager)
+[GuiLin-SSH][INFO] [2016-07-28 15:16:31] com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(46) | Choosing bean (struts) for (com.opensymphony.xwork2.util.ValueStackFactory)
+[GuiLin-SSH][INFO] [2016-07-28 15:16:31] com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(46) | Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionProvider)
+[GuiLin-SSH][INFO] [2016-07-28 15:16:31] com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(46) | Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionContextFactory)
+[GuiLin-SSH][INFO] [2016-07-28 15:16:31] com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(46) | Choosing bean (struts) for (com.opensymphony.xwork2.util.PatternMatcher)
+[GuiLin-SSH][INFO] [2016-07-28 15:16:31] com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(46) | Choosing bean (struts) for (org.apache.struts2.dispatcher.StaticContentLoader)
+[GuiLin-SSH][INFO] [2016-07-28 15:16:31] com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(46) | Choosing bean (struts) for (com.opensymphony.xwork2.UnknownHandlerManager)
+[GuiLin-SSH][INFO] [2016-07-28 15:16:31] com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(46) | Choosing bean (struts) for (org.apache.struts2.views.util.UrlHelper)
+[GuiLin-SSH][INFO] [2016-07-28 15:16:31] com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(46) | Choosing bean (struts) for (com.opensymphony.xwork2.util.TextParser)
+[GuiLin-SSH][INFO] [2016-07-28 15:16:31] com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(46) | Choosing bean (struts) for (org.apache.struts2.dispatcher.DispatcherErrorHandler)
+[GuiLin-SSH][INFO] [2016-07-28 15:16:31] com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(46) | Choosing bean (struts) for (com.opensymphony.xwork2.security.ExcludedPatternsChecker)
+[GuiLin-SSH][INFO] [2016-07-28 15:16:31] com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(46) | Choosing bean (struts) for (com.opensymphony.xwork2.security.AcceptedPatternsChecker)
+[GuiLin-SSH][INFO] [2016-07-28 15:16:31] com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(46) | Initializing Struts-Spring integration...
+[GuiLin-SSH][INFO] [2016-07-28 15:16:31] com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(46) | Setting autowire strategy to name
+[GuiLin-SSH][INFO] [2016-07-28 15:16:31] com.opensymphony.xwork2.util.logging.commons.CommonsLogger.info(46) | ... initialized Struts-Spring integration successfully
+[GuiLin-SSH][INFO] [2016-07-28 15:16:53] org.andy.shop.action.UserinfoAction.execute(85) | 查询所有用户
+[GuiLin-SSH][INFO] [2016-07-28 15:16:54] org.andy.shop.action.UserinfoAction.execute(85) | 查询所有用户
+[GuiLin-SSH][INFO] [2016-07-28 15:16:55] org.andy.shop.action.UserinfoAction.execute(85) | 查询所有用户
